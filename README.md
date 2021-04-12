@@ -16,33 +16,35 @@ After enabling/disabling modules an app cache cleaning process is necessary (che
 If you want to disable module auto links and add your own according to your template, then dashout 2 frontend link registration commands in the Providers\HubsServiceProvider.php file as shown below;\
 (Two forward slashes will make them disabled.)
 
-    // $this->moduleSvc->addFrontendLink('Hubs', '/dhubs', 'fas fa-calendar', $logged_in=true);\
+    // $this->moduleSvc->addFrontendLink('Hubs', '/dhubs', 'fas fa-calendar', $logged_in=true);
     // $this->moduleSvc->addFrontendLink('Stats & Leaderboard', '/dstats', 'fas fa-cog', $logged_in=true);
     
 Then you can add links to your navbar with below examples;
 
-<li>
-  <a class="nav-link" href="{{ route('DisposableHubs.hindex') }}">
-    <i class="fas fa-paper-plane"></i>
-    <span>Hubs</span>
-  </a>
-</li>
 
-<li>
-  <a class="nav-link" href="{{ route('DisposableHubs.dstats') }}">
-    <i class="fas fa-calendar-alt"></i>
-    <span>Statistics & LeaderBoards</span>
-  </a>
-</li>
+// <li>
+//  <a class="nav-link" href="{{ route('DisposableHubs.hindex') }}">
+//    <i class="fas fa-paper-plane"></i>
+//    <span>Hubs</span>
+//  </a>
+// </li>
+
+// <li>
+//  <a class="nav-link" href="{{ route('DisposableHubs.dstats') }}">
+//    <i class="fas fa-calendar-alt"></i>
+//    <span>Statistics & LeaderBoards</span>
+//  </a>
+// </li>
+
 
 Also having a direct link to a specific hub is possible with
 
-<li>
-  <a class="nav-link" href="{{ route('DisposableHubs.hshow', ['LTFM']) }}">
-    <i class="fas fa-calendar-day"></i>
-    <span>LTFM Hub</span>
-  </a>
-</li>
+// <li>
+//  <a class="nav-link" href="{{ route('DisposableHubs.hshow', ['LTFM']) }}">
+//    <i class="fas fa-calendar-day"></i>
+//   <span>LTFM Hub</span>
+//  </a>
+// </li>
 
 (Best way to add links in Laravel structure is to use routes like above, but plain html href="/dhubs/LTFM" is also possible)
 
