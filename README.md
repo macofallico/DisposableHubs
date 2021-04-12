@@ -46,7 +46,7 @@ Also having a direct link to a specific hub is possible with
   </a>
 </li>
 ```
-(Best way to add links in Laravel structure is to use routes like above, but plain html href="/dhubs/LTFM" is also possible)
+(Best way to add links in Laravel structure is to use routes like above, but plain html `href="/dhubs/LTFM"` is also possible)
 
 You are free to edit any of the files as you wish, but please do not expect help/updates for the code you edited (controllers and providers)\
 I always try to provide info and support but can not fix things you broke ;) Just share your thoughts about any improvements so we can think together before changing things.
