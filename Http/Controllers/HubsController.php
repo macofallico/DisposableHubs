@@ -59,7 +59,7 @@ class HubsController extends Controller
 
         if(!$hub) {
             flash()->error('Airport Is Not Hub !');
-            return redirect(route('DisposableHubs.hubs'));
+            return redirect(route('DisposableHubs.hindex'));
         }
 
         if($hub) {
