@@ -21,31 +21,31 @@ If you want to disable module auto links and add your own according to your temp
     
 Then you can add links to your navbar with below examples;
 
+```html
+<li>
+  <a class="nav-link" href="{{ route('DisposableHubs.hindex') }}">
+    <i class="fas fa-paper-plane"></i>
+    <span>Hubs</span>
+  </a>
+</li>
 
-// <li>
-//  <a class="nav-link" href="{{ route('DisposableHubs.hindex') }}">
-//    <i class="fas fa-paper-plane"></i>
-//    <span>Hubs</span>
-//  </a>
-// </li>
-
-// <li>
-//  <a class="nav-link" href="{{ route('DisposableHubs.dstats') }}">
-//    <i class="fas fa-calendar-alt"></i>
-//    <span>Statistics & LeaderBoards</span>
-//  </a>
-// </li>
-
+<li>
+  <a class="nav-link" href="{{ route('DisposableHubs.dstats') }}">
+    <i class="fas fa-calendar-alt"></i>
+    <span>Statistics & LeaderBoards</span>
+  </a>
+</li>
+```
 
 Also having a direct link to a specific hub is possible with
-
-// <li>
-//  <a class="nav-link" href="{{ route('DisposableHubs.hshow', ['LTFM']) }}">
-//    <i class="fas fa-calendar-day"></i>
-//   <span>LTFM Hub</span>
-//  </a>
-// </li>
-
+```html
+<li>
+  <a class="nav-link" href="{{ route('DisposableHubs.hshow', ['LTFM']) }}">
+    <i class="fas fa-calendar-day"></i>
+   <span>LTFM Hub</span>
+  </a>
+</li>
+```
 (Best way to add links in Laravel structure is to use routes like above, but plain html href="/dhubs/LTFM" is also possible)
 
 You are free to edit any of the files as you wish, but please do not expect help/updates for the code you edited (controllers and providers)\
