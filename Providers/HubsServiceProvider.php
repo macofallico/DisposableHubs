@@ -97,7 +97,7 @@ class HubsServiceProvider extends ServiceProvider
     $this->publishes([$sourcePath => $viewPath,], 'views');
 
     $this->loadViewsFrom(array_merge(array_map(function ($path) {
-      return $path . '/modules/TurkSim';
+      return $path . '/modules/DisposableHubs';
     }, \Config::get('view.paths')), [$sourcePath]), 'DisposableHubs');
   }
 
