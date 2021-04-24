@@ -44,6 +44,9 @@ class StatsController extends Controller
     public function stats()
     {
         $DisposableTools = Module::has('DisposableTools');
+        if($DisposableTools) {
+          $DisposableTools = $DisposableTools->isEnabled();
+        }
 
         $TotalAirlines = $this->airlineRepo->count();
         $TotalinactiveAirlines = $this->airlineRepo->where('active', '!=', '1')->count();

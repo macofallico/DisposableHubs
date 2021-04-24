@@ -64,6 +64,9 @@ class HubsController extends Controller
 
         if($hub) {
             $DisposableTools = Module::has('DisposableTools');
+            if($DisposableTools) {
+              $DisposableTools = $DisposableTools->isEnabled();
+            }
             $hubfleets = $this->subfleetRepo->where('hub_id', $hub->id)->select('id')->get();
             $hubfleets = $hubfleets->map->only(['id'])->all();
             $haircrafts = $this->aircraftRepo->whereIn('subfleet_id', $hubfleets)->get();
