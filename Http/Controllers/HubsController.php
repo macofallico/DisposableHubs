@@ -76,6 +76,11 @@ class HubsController extends Controller
             $deps = $this->flightRepo->where('dpt_airport_id', $hub->id)->where('active', 1)->where('visible',1)->get();
             $arrs = $this->flightRepo->where('arr_airport_id', $hub->id)->where('active', 1)->where('visible',1)->get();
 
+            if(setting('pilots.hide_inactive')) {
+                $hpilots = $hpilots->where('state',1);
+                $vpilots = $vpilots->where('state',1);
+            }
+
           return view('DisposableHubs::show', [
               'disptools'  => $DisposableTools,
               'hub'        => $hub,

@@ -5,7 +5,7 @@ Technically all blade files (views/pages or whatever you call them) should work 
 
 So if something looks weird in your template then you need to edit them.
 
-***** Installation Steps 
+***** Manual Installation Steps 
 
 Upload contents of the package (or pull/clone from GitHub) to your root/modules/DisposableHubs folder\
 Go to admin section and enable the module, that's all\
