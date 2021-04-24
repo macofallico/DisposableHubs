@@ -43,7 +43,7 @@ class StatsController extends Controller
     // Return Multiple Strings
     public function stats()
     {
-        $DisposableTools = Module::has('DisposableTools');
+        $DisposableTools = Module::find('DisposableTools');
         if($DisposableTools) {
           $DisposableTools = $DisposableTools->isEnabled();
         }

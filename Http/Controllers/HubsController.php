@@ -63,7 +63,7 @@ class HubsController extends Controller
         }
 
         if($hub) {
-            $DisposableTools = Module::has('DisposableTools');
+            $DisposableTools = Module::find('DisposableTools');
             if($DisposableTools) {
               $DisposableTools = $DisposableTools->isEnabled();
             }
