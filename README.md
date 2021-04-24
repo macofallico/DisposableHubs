@@ -1,4 +1,4 @@
-#Disposable Hubs Module for phpVMS v7 (v1.0)
+#Disposable Hubs Module for phpVMS v7
 
 This module is compatible with the latest dev build as of 12APR2021, there is no need to modify any default files.\
 Technically all blade files (views/pages or whatever you call them) should work with your template but they are mainly designed for Bootstrap compatible themes (like Disposable Themes, Stisla etc). 
@@ -9,7 +9,7 @@ So if something looks weird in your template then you need to edit them.
 
 Upload contents of the package (or pull/clone from GitHub) to your root/modules/DisposableHubs folder\
 Go to admin section and enable the module, that's all\
-After enabling/disabling modules an app cache cleaning process is necessary (check admin/maintenance)
+After enabling/disabling modules an app cache cleaning process IS necessary (check admin/maintenance)
 
 ***** Usage
 
