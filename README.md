@@ -13,15 +13,17 @@ After enabling/disabling modules an app cache cleaning process IS necessary (che
 
 ***** Usage
 
-If you want to disable module auto links and add your own according to your template, then dashout 2 frontend link registration commands in the Providers\HubsServiceProvider.php file as shown below;\
-(Two forward slashes will make them disabled.)
+If you want to enable module auto links, then enable frontend link registration commands in ModuleFolder\Providers\....ServiceProvider.php file as shown below;\
+(Two forward slashes (//) = Disabled, No forward slashes = Enabled )
 
-    // $this->moduleSvc->addFrontendLink('Hubs', '/dhubs', 'fas fa-calendar', $logged_in=true);
+```
+    $this->moduleSvc->addFrontendLink('Hubs', '/dhubs', 'fas fa-calendar', $logged_in=true);
     // $this->moduleSvc->addFrontendLink('Stats & Leaderboard', '/dstats', 'fas fa-cog', $logged_in=true);
-    
-Then you can add links to your navbar with below examples;
+```
 
-```html
+DisposableTheme IS capable of recognizing and showing proper links for Disposable Modules but if you need some more control, then you can add links to your navbar (or any other place) with below examples;
+
+```
 <li>
   <a class="nav-link" href="{{ route('DisposableHubs.hindex') }}">
     <i class="fas fa-paper-plane"></i>
@@ -38,7 +40,7 @@ Then you can add links to your navbar with below examples;
 ```
 
 Also having a direct link to a specific hub is possible with
-```html
+```
 <li>
   <a class="nav-link" href="{{ route('DisposableHubs.hshow', ['LTFM']) }}">
     <i class="fas fa-calendar-day"></i>

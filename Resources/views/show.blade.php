@@ -79,7 +79,7 @@
     </div>
     {{-- RIGHT --}}
     <div class="col-6">
-      <div class="card mb-2 border-0 shadow-none">
+      <div class="card mb-2">
           {{ Widget::AirspaceMap(['width' => '100%', 'height' => '400px', 'lat' => $hub->lat, 'lon' => $hub->lon,]) }}
       </div>
     </div>
