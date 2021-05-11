@@ -64,7 +64,7 @@
         </div>
       </div>
       @if($disptools)
-        @widget('Modules\DisposableTools\Widgets\FlightsMap', ['source' => $hub->id])
+        {{-- @widget('Modules\DisposableTools\Widgets\FlightsMap', ['source' => $hub->id]) --}}
       @endif
       @if(count($hub->files) > 0 && Auth::check())
         <div class="card mb-2">
@@ -101,6 +101,9 @@
     @if($disptools)
       <li class="nav-item pr-1 pl-1" role="presentation">
         <a class="nav-link dispo-pills" id="pills-pireps-tab" data-toggle="pill" href="#pills-pireps" role="tab" aria-controls="pills-pireps" aria-selected="false">@lang('DisposableHubs::common.hubreps')</a>
+      </li>
+      <li class="nav-item pr-1 pl-1" role="presentation">
+        @widget('Modules\DisposableTools\Widgets\FlightsMap', ['source' => $hub->id])
       </li>
     @endif
   </ul>
