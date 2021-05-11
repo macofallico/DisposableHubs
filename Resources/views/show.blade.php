@@ -63,6 +63,9 @@
           </table>
         </div>
       </div>
+      @if($disptools)
+        @widget('Modules\DisposableTools\Widgets\FlightsMap', ['source' => $hub->id])
+      @endif
       @if(count($hub->files) > 0 && Auth::check())
         <div class="card mb-2">
           <div class="card-header p-1">
@@ -80,7 +83,7 @@
     {{-- RIGHT --}}
     <div class="col-6">
       <div class="card mb-2">
-          {{ Widget::AirspaceMap(['width' => '100%', 'height' => '400px', 'lat' => $hub->lat, 'lon' => $hub->lon,]) }}
+        {{ Widget::AirspaceMap(['width' => '100%', 'height' => '400px', 'lat' => $hub->lat, 'lon' => $hub->lon,]) }}
       </div>
     </div>
   </div>
