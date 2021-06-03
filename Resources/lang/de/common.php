@@ -1,0 +1,53 @@
+<?php
+
+return [
+  // Gemeinsam
+  'type' => 'Typ',
+  'code' => 'Code',
+  'cost' => 'Kosten',
+  'groundh' => 'Bodenabfertigung',
+  'fuel' => 'Treibstoff',
+  'subfleet' => 'Unterflotte',
+  'hub' => 'Hub|Hubs',
+  'airport' => 'Flughafen|Flughäfen',
+  'hubtitle' => 'Hub Details',
+  'location' => 'Standort',
+  'timezone' => 'Zeitzone',
+  'hubplt' => 'Hub Piloten',
+  'visitplt' => 'Besuchende Piloten',
+  'hubac' => 'Hub Flugzeuge',
+  'visitac' => 'Besuchsflugzeug',
+  'hubflts' => 'Hub Flüge',
+  'hubdep' => 'Hub Abflüge',
+  'hubarr' => 'Hub Ankünfte',
+  'hubreps' => 'Hub PIREPs',
+  // Flüge
+  'orig' => 'Herkunft',
+  'dest' => 'Ziel',
+  'dist' => 'Entfernung',
+  'flightno' => 'Flugnummer',
+  'flightid' => 'Flugkennung (Code & Strecke)',
+  'std' => 'Geplanter Abflug',
+  'sta' => 'Geplante Ankunft',
+  // Flugzeuge
+  'ftime' => 'Flugzeit',
+  'lastlnd' => 'Letzte Landung',
+  'reg' => 'Registrierung',
+  // Statistiken
+  'stats' => 'Statistik',
+  'tpirep' => 'PIREPs gesamt',
+  'rpirep' => 'Abgelehnte PIREPs',
+  'aftime' => 'Durchschnittliche Flugzeit',
+  'adist' => 'Mittlere Entfernung',
+  'tfuel' => 'Treibstoffverbrauch gesamt',
+  'afuel' => 'Durchschnittlicher Treibstoffverbrauch / Flug',
+  'hfuel' => 'Durchschnittlicher Treibstoffverbrauch / Stunde',
+  'alanding' => 'Durchschnittliche Landequote',
+  'ascore' => 'Durchschnittliche Punktzahl',
+  'soverall' => 'Rangliste',
+  'syear' => 'Jährliche Pilot Rangliste',
+  'syearal' => 'Jährliche Airline-Rangliste',
+  'smonth' => 'Monatliche Pilot Rangliste',
+  'smonthal' => 'Monatliche Airline-Rangliste',
+];
+
