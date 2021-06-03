@@ -1,6 +1,10 @@
 ## Disposable Hubs Module for phpVMS v7
 **Update Notes**
-12.MAY.21
+
+**03.JUN.21**
+* German Translation (thanks @derrobin154)
+
+**12.MAY.21**
 * Added example placement for Flights Map to Hub Details page (Needs updated DisposableTools Module)
 
 ---
