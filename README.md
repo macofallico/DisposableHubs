@@ -1,6 +1,9 @@
 ## Disposable Hubs Module for phpVMS v7
 **Update Notes**
 
+**06.JUL.21**
+* Updated German Translation (thanks @GAE074)
+
 **03.JUN.21**
 * German Translation (thanks @derrobin154)
 
