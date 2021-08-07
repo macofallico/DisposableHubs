@@ -30,7 +30,13 @@
             @if(filled($hub->country))
               <tr>
                 <th scope="row">@lang('common.country')</th>
-                <td>{{ $country->alpha2($hub->country)['name'] }} ({{ strtoupper($hub->country) }})</td>
+                <td>
+                  @if(strlen($hub->country) == 2)
+                    {{ $country->alpha2($hub->country)['name'] }} ({{ $hub->country }})
+                  @else
+                    {{ $hub->country }}
+                  @endif
+                </td>
               </tr>
             @endif
             <tr>
@@ -108,7 +114,7 @@
     <div class="tab-pane fade show active" id="pills-pilots" role="tabpanel" aria-labelledby="pills-pilots-tab">
       <div class="row row-cols-2">
         @include('DisposableHubs::show_pilots')
-      </div>    
+      </div>
     </div>
     <div class="tab-pane fade" id="pills-aircrafts" role="tabpanel" aria-labelledby="pills-aircrafts-tab">
       <div class="row row-cols-2">

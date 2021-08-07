@@ -1,6 +1,10 @@
 ## Disposable Hubs Module for phpVMS v7
 **Update Notes**
 
+**07.AUG.21**
+* Added failsafe for country lookup (ISO codes vs full names)
+* Version rounding
+
 **08.JUL.21**
 * Italian Translation (thanks @Fabietto996)
 
