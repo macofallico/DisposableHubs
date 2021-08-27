@@ -1,6 +1,6 @@
 # Disposable Hubs Module
 
-Module is compatible with any the latest development build of phpVMS v7 released after **12.APR.2021**. Provides;
+Module is compatible with any latest development build of phpVMS v7 released after **12.APR.2021**. Provides;
 
 * Hubs page
 * Hub Details page
