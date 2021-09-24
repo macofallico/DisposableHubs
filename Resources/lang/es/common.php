@@ -46,7 +46,7 @@ return [
   'ascore'    => 'Puntaje Promedio',
   'soverall'  => 'Pilotos Lideres',
   'syear'     => 'Pilotos Lideres Anuales',
-  'syearal'   => 'Aerolínea Lider Anual',
+  'syearal'   => 'Aerolínea Líder Anual',
   'smonth'    => 'Pilotos lideres Mensuales',
   'smonthal'  => 'Aerolíneas lideres Mensuales',
 ];
